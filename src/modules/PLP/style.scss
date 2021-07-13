@@ -1,0 +1,10 @@
+.products-section {
+    display: flex;
+    margin: 0 12%;
+    &__plp {
+      display: flex;
+      flex-basis: 80%;
+      flex-wrap: wrap;
+      padding: 15px;
+    }
+  }

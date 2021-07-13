@@ -1,27 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Redirect, Route, Switch } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { GlobalStyles } from "./styles/global";
+import Home from "./modules/Home";
+import Register from "./modules/Register";
+import Products from "./modules/PLP"
+import SignIn from "./modules/SignIn"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <GlobalStyles />
+            <Header />
+            <main>
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/register" component={Register} />
+                    <Route exact path="/signin" component={SignIn} />
+                    <Route exact path="/products" component={Products} />
+                    <Route exact path="/products/:id" component={Products} />
+                    <Redirect to="/" />
+                </Switch>
+            </main>
+            <Footer/>
+        </>
+    );
 }
 
 export default App;
