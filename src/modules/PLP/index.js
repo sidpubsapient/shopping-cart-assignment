@@ -4,6 +4,7 @@ import { useParams } from "react-router";
 
 import Sidebar from "./../../components/Sidebar";
 import Products from "./../../components/Product";
+import DropDown from "./../../components/DropDown";
 
 import { getCategoryData } from "../../redux/category/actions";
 import { getProductData } from "../../redux/product/actions";
@@ -25,9 +26,12 @@ const PLP = () => {
 
     return (
         <section className="products-section">
-            <Sidebar
-                categories={categories.filter( category => category.enabled)}
-            />
+            <div className="products-section__mobile-dropdown">
+                <DropDown options={categories.filter( category => category.enabled)} value={params["id"]}/>
+            </div>
+            <div className="products-section__desktop-sidebar">
+                <Sidebar categories={categories.filter( category => category.enabled)} selectedCategory={params["id"]}/> 
+            </div>
             <div className="products-section__plp">
                 <Products products={getProducts()}/>
             </div>

@@ -14,3 +14,13 @@
     font-weight: 600;
   }
 }
+
+@media (max-width: 480px) {
+  .footer {
+    height: 30px;
+    padding: 0px 4%;
+    span {
+      font-size: 12px;
+    }
+  }
+}

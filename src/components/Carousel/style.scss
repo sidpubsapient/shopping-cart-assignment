@@ -20,3 +20,15 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .carousel-container {
+    margin: 0;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .carousel-container {
+    margin: 0;
+  }
+}

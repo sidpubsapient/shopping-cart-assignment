@@ -1,99 +1,174 @@
 @import "../../styles/variables.scss";
 
-.product {
-    box-shadow: 10px 0px 10px -8px $color-primary-box-shadow-dark;
-    flex: 0 1 24%;
-    margin-bottom: 50px;
-    height: 45vh;
-    padding: 4px;
-    &:last-child {
-      margin-bottom: 0;
+    .product {
+      box-shadow: 10px 0px 10px -8px $color-primary-box-shadow-dark;
+      flex: 0 1 24%;
+      margin-bottom: 50px;
+      height: 45vh;
+      padding: 4px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &__name {
+        font-weight: 700;
+        min-height: 105px;
+        padding: 0 10px;
+      }
+      &__imageContainer {
+        padding: 0 15px 20px 15px;
+        &__wrapper {
+          &__image {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        &__mobileTabletLayout {
+          display: none;
+          flex-direction: column;
+          justify-content: space-between;
+          &__description {
+            background-color: $color-primary-background-light;
+            overflow: auto;
+            margin: 0 0 5px 5px;
+            padding: 0 5px;
+            height: 150px;
+            span {
+              font-size: 13px;
+              font-weight: 600;
+              word-break: break-word;
+            }
+          }
+          &__buyNowContainer {
+            padding: 0 0 0 5px;
+            button {
+              color: $color-primary-text-light;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      &__description {
+        background-color: $color-primary-background-light;
+        height: 85px;
+        margin: 0 10px 15px 10px;
+        overflow: auto;
+        padding: 0 5px;
+        span {
+          text-align: justify;
+          font-size: 13px;
+          font-weight: 600;
+        }
+      }
+      &__buyNowContainer {
+        align-items: center;
+        border-bottom: 2px dotted $color-primary-border-dark;
+        display: flex;
+        margin: 0 10px;
+        padding: 0 0 10px 0;
+        span {
+          flex-basis: 50%;
+          font-size: 13px;
+          font-weight: 600;
+        }
+        button {
+          color: $color-primary-text-light;
+          flex-basis: 50%;
+          font-size: 12px;
+        }
+        .cart-button {
+          background-color: $color-primary-background;
+          border: none;
+          border-radius: 50%;
+          font-size: 14px;
+          line-height: 1.25;
+          margin-right: 10px;
+          span {
+            color: $color-primary-text-light;
+          }
+          .decrement {
+            cursor: pointer;
+            padding: 2px;
+          }
+          .increment {
+            cursor: pointer;
+          }
+        }
+        .quantity {
+          margin-right: 10px;
+        }
+      }
     }
+
+
+@media (max-width: 480px) {
+  .product {
+        box-shadow: none;
+        flex: 0 1 100%;
+        margin-bottom: 25px;
+        height: 30vh;
+        &__name {
+          min-height: 40px;
+          font-weight: 700;
+        }
+        &__imageContainer {
+          border-bottom: 2px dotted $color-primary-border-dark;
+          display: flex;
+          height: 190px;
+          margin: 0 10px 10px 10px;
+          padding: 0 0 10px 0;
+          &__wrapper {
+            flex-basis: 50%;
+          }
+          &__mobileTabletLayout {
+            display: flex;
+            flex-basis: 50%;
+          }
+        }
+        &__desktopLayout {
+          display: none;
+        }
+      }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .product {
+    flex: 0 1 50%;
     &__name {
-      font-weight: 700;
-      min-height: 105px;
-      padding: 0 10px;
+      min-height: 70px;
     }
     &__imageContainer {
-      padding: 0 15px 20px 15px;
+      display: flex;
+      height: 110px;
+      padding: 0 10px 10px 10px;
       &__wrapper {
-        &__image {
-          width: 100%;
-          height: 100%;
-        }
+        flex-basis: 50%;
       }
       &__mobileTabletLayout {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        &__description {
-          background-color: $color-primary-background-light;
-          overflow: auto;
-          margin: 0 0 5px 5px;
-          padding: 0 5px;
-          span {
-            font-size: 13px;
-            font-weight: 600;
-            word-break: break-word;
-          }
-        }
-        &__buyNowContainer {
-          padding: 0 0 0 5px;
-          button {
-            color: $color-primary-text-light;
-            font-size: 13px;
-          }
-        }
-      }
-    }
-    &__description {
-      background-color: $color-primary-background-light;
-      height: 85px;
-      margin: 0 10px 15px 10px;
-      overflow: auto;
-      padding: 0 5px;
-      span {
-        text-align: justify;
-        font-size: 13px;
-        font-weight: 600;
+        flex-basis: 50%;
       }
     }
     &__buyNowContainer {
-      align-items: center;
-      border-bottom: 2px dotted $color-primary-border-dark;
-      display: flex;
-      margin: 0 10px;
-      padding: 0 0 10px 0;
-      span {
-        flex-basis: 50%;
-        font-size: 13px;
-        font-weight: 600;
-      }
       button {
-        color: $color-primary-text-light;
-        flex-basis: 50%;
-        font-size: 12px;
-      }
-      .cart-button {
-        background-color: $color-primary-background;
-        border: none;
-        border-radius: 50%;
-        font-size: 14px;
-        line-height: 1.25;
-        margin-right: 10px;
-        span {
-          color: $color-primary-text-light;
-        }
-        .decrement {
-          cursor: pointer;
-          padding: 2px;
-        }
-        .increment {
-          cursor: pointer;
-        }
-      }
-      .quantity {
-        margin-right: 10px;
+        flex-basis: 100%;
       }
     }
+    &__desktopLayout {
+      display: none;
+    }
   }
+}
+
+@media (min-width: 767px) and (max-width: 1080px) {
+  .product {
+    flex: 0 1 33%;
+    &__imageContainer {
+      &__mobileTabletLayout {
+        display: flex;
+      }
+    }
+    &__desktopLayout {
+      display: none;
+    }
+  }
+}

@@ -42,3 +42,12 @@
     text-align: justify;
   }
 }
+
+
+@media (max-width: 480px) {
+  .form-group {
+    &:first-child {
+      margin-top: 10px;
+    }
+  }
+}

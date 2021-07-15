@@ -37,3 +37,30 @@
     width: 275px;
   }
 }
+
+@media (max-width: 480px) {
+  .categoryCard {
+    margin: 0;
+    img {
+      flex: 0 0 150px;
+      width: 150px;
+    }
+    &__caption {
+      h4 {
+        font-size: 20px;
+      }
+      span {
+        font-size: 14px;
+      }
+      button {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .categoryCard {
+    margin: 0;
+  }
+}
