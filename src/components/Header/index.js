@@ -88,6 +88,7 @@ const Header = () => {
                                 onClick={clickHandlerCartButton}
                                 role="button"
                                 tabIndex="0"
+                                data-testid="open-cart-button"
                             >
                                 <img src="/static/images/cart.svg" alt="Cart Icon" />
                                 <Text>{cartItemsCount} items</Text>

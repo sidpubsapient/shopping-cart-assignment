@@ -39,6 +39,7 @@ const Cart = () => {
                     </Text>
                     <button
                         aria-label="Close Cart"
+                        data-testid="close-cart-button"
                         onClick={clickHandlerCloseButton}
                         tabIndex="0"
                     >

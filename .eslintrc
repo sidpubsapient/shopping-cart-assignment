@@ -5,6 +5,18 @@
         "node": true
     },
     "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:jsx-a11y/recommended"],
+    "overrides": [
+        {
+          "files": [
+            "**/*.spec.js",
+            "**/*.spec.jsx",
+            "**/*.test.jsx"
+          ],
+          "env": {
+            "jest": true
+          }
+        }
+      ],
     "parserOptions": {
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,

@@ -16,6 +16,7 @@ const PLP = () => {
     const categories = useSelector((state) => state.category.categories);
     const products = useSelector((state) => state.product.products);
     const getProducts = () => {
+        // eslint-disable-next-line no-prototype-builtins
         return params.hasOwnProperty("id") ? products.filter(product => product.category == params.id) : products
     }
 
