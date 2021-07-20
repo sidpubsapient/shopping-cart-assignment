@@ -4,9 +4,10 @@
   "description": "This is a shopping cart coding exercise",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config=webpack.config.prod.js",
+    "start:client": "concurrently \"webpack serve --config=webpack.config.dev.js --open\" \"canned -p 3001 ./mockserver\"",
+    "build": "webpack --config=webpack.config.prod.js && (cd server && npm install)",
     "build-dev": "webpack --config=webpack.config.dev.js",
-    "start": "concurrently \"webpack serve --config=webpack.config.dev.js --open\" \"canned -p 3001 ./server\"",
+    "start": "cd server && npm start",
     "test": "jest --config tests/jest.config.js"
   },
   "author": "Siddharth Yadav",
@@ -41,6 +42,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^5.2.4",
     "eslint": "^7.30.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
@@ -60,5 +62,6 @@
     "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.8.0"
-  }
+  },
+  "proxy": "http://localhost:3001"
 }
