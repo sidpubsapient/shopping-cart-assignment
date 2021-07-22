@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <footer
+    class="footer"
+  >
+    <span
+      aria-hidden="false"
+      aria-label=""
+      class="span "
+    >
+      Copyright © 2011-2018 Sabka Bazaar Grocery Supplies Pvt Ltd
+    </span>
+  </footer>
+</DocumentFragment>
+`;

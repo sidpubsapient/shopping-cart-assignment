@@ -1,0 +1,203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`With React Testing Library should take a snapshot 1`] = `
+<DocumentFragment>
+  <header
+    class="header"
+  >
+    <div
+      class="overlay "
+    />
+    <div
+      class="cart-container "
+    >
+      <header
+        class="cart-container__header"
+      >
+        <span
+          aria-hidden="false"
+          aria-label="You have 0 items in your cart"
+          class="span "
+          role="heading"
+          tabindex="0"
+        >
+          My Cart
+        </span>
+        <button
+          aria-label="Close Cart"
+          data-testid="close-cart-button"
+          tabindex="0"
+        >
+          x
+        </button>
+      </header>
+      <div
+        class="cart-container__emptyCartContainer"
+      >
+        <div
+          class="cart-container__emptyCartContainer__textContainer"
+        >
+          <span
+            aria-hidden="false"
+            aria-label=""
+            class="span "
+          >
+            No items in your cart
+          </span>
+          <span
+            aria-hidden="false"
+            aria-label=""
+            class="span "
+          >
+            Your favorite items are just a click away
+          </span>
+        </div>
+        <div
+          class="cart-container__emptyCartContainer__buttonContainer"
+        >
+          <button
+            aria-hidden="false"
+            aria-label=""
+            class="button "
+            type="submit"
+          >
+            Start Shopping
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="logo-container"
+    >
+      <a
+        aria-label="Sabka Bazaar Logo"
+        href="/"
+        tabindex="0"
+      >
+        <img
+          alt="Sabka Bazaar Logo"
+          aria-hidden="true"
+          src="/static/images/logo_2x.png"
+        />
+      </a>
+    </div>
+    <div
+      class="nav-container"
+    >
+      <div
+        class="nav-container__quickLinks"
+      >
+        <a
+          aria-label="Navigate to signin page"
+          href="/signin"
+          role="navigation"
+          tabindex="0"
+        >
+          <span
+            aria-hidden="false"
+            aria-label=""
+            class="span "
+          >
+            SignIn
+          </span>
+        </a>
+        <a
+          aria-label="Navigate to register page"
+          href="/register"
+          role="navigation"
+          tabindex="0"
+        >
+          <span
+            aria-hidden="false"
+            aria-label=""
+            class="span "
+          >
+            Register
+          </span>
+        </a>
+      </div>
+      <div
+        class="nav-container__navigation"
+      >
+        <div
+          class="nav-container__navigation__links"
+        >
+          <a
+            aria-label="Navigate to home page"
+            href="/"
+            role="navigation"
+            tabindex="0"
+          >
+            <span
+              aria-hidden="false"
+              aria-label=""
+              class="span "
+            >
+              Home
+            </span>
+          </a>
+          <a
+            aria-label="Navigate to products page"
+            href="/products"
+            role="navigation"
+            tabindex="0"
+          >
+            <span
+              aria-hidden="false"
+              aria-label=""
+              class="span "
+            >
+              Products
+            </span>
+          </a>
+        </div>
+        <div
+          class="nav-container__navigation__buttonContainer"
+        >
+          <button
+            aria-hidden="false"
+            aria-label="You have 0 items in your cart"
+            class="button cartButton"
+            data-testid="open-cart-button"
+            role="button"
+            tabindex="0"
+            type="submit"
+          >
+            <img
+              alt="Cart Icon"
+              src="/static/images/cart.svg"
+            />
+            <span
+              aria-hidden="false"
+              aria-label=""
+              class="span "
+            >
+              0 items
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section
+      class="homepage-section"
+    >
+      <div
+        class="carousel-container"
+      />
+    </section>
+  </main>
+  <footer
+    class="footer"
+  >
+    <span
+      aria-hidden="false"
+      aria-label=""
+      class="span "
+    >
+      Copyright © 2011-2018 Sabka Bazaar Grocery Supplies Pvt Ltd
+    </span>
+  </footer>
+</DocumentFragment>
+`;

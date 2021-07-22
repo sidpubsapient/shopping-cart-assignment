@@ -1,0 +1,360 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test carousel with default banners 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="carousel-container"
+      >
+        <div
+          class="carousel-root"
+          tabindex="0"
+        >
+          <div
+            class="carousel carousel-slider"
+            style="width: 100%;"
+          >
+            <ul
+              class="control-dots"
+            >
+              <li
+                aria-label="slide item 1"
+                class="dot selected"
+                role="button"
+                tabindex="0"
+                value="0"
+              />
+              <li
+                aria-label="slide item 2"
+                class="dot"
+                role="button"
+                tabindex="0"
+                value="1"
+              />
+              <li
+                aria-label="slide item 3"
+                class="dot"
+                role="button"
+                tabindex="0"
+                value="2"
+              />
+              <li
+                aria-label="slide item 4"
+                class="dot"
+                role="button"
+                tabindex="0"
+                value="3"
+              />
+              <li
+                aria-label="slide item 5"
+                class="dot"
+                role="button"
+                tabindex="0"
+                value="4"
+              />
+            </ul>
+            <button
+              aria-label="Previous Banner"
+              style="left: 0px;"
+              tabindex="0"
+              type="button"
+            >
+               PREV 
+            </button>
+            <div
+              class="slider-wrapper axis-horizontal"
+            >
+              <ul
+                class="slider animated"
+                style="transform: translate3d(-100%,0,0); transition-duration: 350ms;"
+              >
+                <li
+                  class="slide"
+                >
+                  <div>
+                    <img
+                      alt="Independence Day Deal - Rs70 off on tea"
+                      src="/static/images/offers/offer5.jpg"
+                    />
+                  </div>
+                </li>
+                <li
+                  class="slide selected"
+                >
+                  <div>
+                    <img
+                      alt="Independence Day Deal - 25% off on shampoo"
+                      src="/static/images/offers/offer1.jpg"
+                    />
+                  </div>
+                </li>
+                <li
+                  class="slide"
+                >
+                  <div>
+                    <img
+                      alt="Independence Day Deal - Rs120 off on surf"
+                      src="/static/images/offers/offer2.jpg"
+                    />
+                  </div>
+                </li>
+                <li
+                  class="slide"
+                >
+                  <div>
+                    <img
+                      alt="Independence Day Deal - Rs99 off on domex"
+                      src="/static/images/offers/offer3.jpg"
+                    />
+                  </div>
+                </li>
+                <li
+                  class="slide"
+                >
+                  <div>
+                    <img
+                      alt="Independence Day Deal - Rs99 off on bodywash"
+                      src="/static/images/offers/offer4.jpg"
+                    />
+                  </div>
+                </li>
+                <li
+                  class="slide"
+                >
+                  <div>
+                    <img
+                      alt="Independence Day Deal - Rs70 off on tea"
+                      src="/static/images/offers/offer5.jpg"
+                    />
+                  </div>
+                </li>
+                <li
+                  class="slide selected"
+                >
+                  <div>
+                    <img
+                      alt="Independence Day Deal - 25% off on shampoo"
+                      src="/static/images/offers/offer1.jpg"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <button
+              aria-label="Next Banner"
+              style="right: 0px;"
+              tabindex="0"
+              type="button"
+            >
+              NEXT
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="carousel-container"
+    >
+      <div
+        class="carousel-root"
+        tabindex="0"
+      >
+        <div
+          class="carousel carousel-slider"
+          style="width: 100%;"
+        >
+          <ul
+            class="control-dots"
+          >
+            <li
+              aria-label="slide item 1"
+              class="dot selected"
+              role="button"
+              tabindex="0"
+              value="0"
+            />
+            <li
+              aria-label="slide item 2"
+              class="dot"
+              role="button"
+              tabindex="0"
+              value="1"
+            />
+            <li
+              aria-label="slide item 3"
+              class="dot"
+              role="button"
+              tabindex="0"
+              value="2"
+            />
+            <li
+              aria-label="slide item 4"
+              class="dot"
+              role="button"
+              tabindex="0"
+              value="3"
+            />
+            <li
+              aria-label="slide item 5"
+              class="dot"
+              role="button"
+              tabindex="0"
+              value="4"
+            />
+          </ul>
+          <button
+            aria-label="Previous Banner"
+            style="left: 0px;"
+            tabindex="0"
+            type="button"
+          >
+             PREV 
+          </button>
+          <div
+            class="slider-wrapper axis-horizontal"
+          >
+            <ul
+              class="slider animated"
+              style="transform: translate3d(-100%,0,0); transition-duration: 350ms;"
+            >
+              <li
+                class="slide"
+              >
+                <div>
+                  <img
+                    alt="Independence Day Deal - Rs70 off on tea"
+                    src="/static/images/offers/offer5.jpg"
+                  />
+                </div>
+              </li>
+              <li
+                class="slide selected"
+              >
+                <div>
+                  <img
+                    alt="Independence Day Deal - 25% off on shampoo"
+                    src="/static/images/offers/offer1.jpg"
+                  />
+                </div>
+              </li>
+              <li
+                class="slide"
+              >
+                <div>
+                  <img
+                    alt="Independence Day Deal - Rs120 off on surf"
+                    src="/static/images/offers/offer2.jpg"
+                  />
+                </div>
+              </li>
+              <li
+                class="slide"
+              >
+                <div>
+                  <img
+                    alt="Independence Day Deal - Rs99 off on domex"
+                    src="/static/images/offers/offer3.jpg"
+                  />
+                </div>
+              </li>
+              <li
+                class="slide"
+              >
+                <div>
+                  <img
+                    alt="Independence Day Deal - Rs99 off on bodywash"
+                    src="/static/images/offers/offer4.jpg"
+                  />
+                </div>
+              </li>
+              <li
+                class="slide"
+              >
+                <div>
+                  <img
+                    alt="Independence Day Deal - Rs70 off on tea"
+                    src="/static/images/offers/offer5.jpg"
+                  />
+                </div>
+              </li>
+              <li
+                class="slide selected"
+              >
+                <div>
+                  <img
+                    alt="Independence Day Deal - 25% off on shampoo"
+                    src="/static/images/offers/offer1.jpg"
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button
+            aria-label="Next Banner"
+            style="right: 0px;"
+            tabindex="0"
+            type="button"
+          >
+            NEXT
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
