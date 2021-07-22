@@ -1,6 +1,6 @@
 import axios from "axios";
 const instance = axios.create({
-    baseURL: "http://localhost:3001/api"
+    baseURL: process.env.baseURL
 });
 
 instance.defaults.headers.common["Accept"] = "application/json";
