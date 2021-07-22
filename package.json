@@ -7,7 +7,7 @@
     "start:client": "concurrently \"webpack serve --config=webpack.config.dev.js --open\" \"canned -p 3001 ./mockserver\"",
     "build": "webpack --config=webpack.config.prod.js && (cd server && npm install)",
     "build-dev": "webpack --config=webpack.config.dev.js",
-    "start": "cd server && npm start",
+    "start": "node server",
     "test": "jest --config tests/jest.config.js"
   },
   "author": "Siddharth Yadav",
