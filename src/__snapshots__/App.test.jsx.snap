@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`With React Testing Library should take a snapshot 1`] = `
+exports[`Testing App wrapper should take a snapshot 1`] = `
 <DocumentFragment>
   <header
     class="header"
