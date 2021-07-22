@@ -1,0 +1,18 @@
+name: CI for code push in PS-SKB
+
+on:
+  # Triggers the workflow on push event only for the develop branch
+  push:
+    branches: [ develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: npm install, build and test
+        run: |
+          npm install
+          npm run build
+          npm test
