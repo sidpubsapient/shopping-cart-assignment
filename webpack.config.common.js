@@ -28,9 +28,6 @@ module.exports = {
             patterns: [
                 { from: "static" }
             ]
-        }),
-        new webpack.ProvidePlugin({
-            process: "process/browser",
-        }),
+        })
     ],
 };
