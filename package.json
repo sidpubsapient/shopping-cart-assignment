@@ -2,7 +2,6 @@
   "name": "code-exercise",
   "version": "1.0.0",
   "description": "This is a shopping cart coding exercise",
-  "main": "index.js",
   "scripts": {
     "start:client": "concurrently \"webpack serve --config=webpack.config.dev.js --open\" \"canned -p 3001 ./mockserver\"",
     "build": "webpack --config=webpack.config.prod.js && (cd server && npm install)",
