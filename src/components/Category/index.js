@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../Button";
 import Text from "../Text";
-
+import PropTypes from "prop-types";
 import "./style.scss";
 
 const CategoryCard = ({ categories }) => categories.filter(category => category.enabled).map(category => (
@@ -21,5 +21,10 @@ const CategoryCard = ({ categories }) => categories.filter(category => category.
             </Link>
         </div>
     </div>));
+
+
+CategoryCard.propTypes = {
+    categories: PropTypes.array.isRequired
+}
 
 export default CategoryCard;

@@ -2,7 +2,7 @@ import React from "react";
 import "./style.scss";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
+import PropTypes from "prop-types";
 
 const CarouselComponent = ({banners})=> {
     return (
@@ -46,5 +46,9 @@ const CarouselComponent = ({banners})=> {
         </div>
     );
 };
+
+CarouselComponent.propTypes = {
+    banners: PropTypes.array.isRequired
+}
 
 export default CarouselComponent;

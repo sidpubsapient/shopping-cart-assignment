@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import Text from "../Text";
-
+import PropTypes from "prop-types";
 import {
     incrementQty,
     decrementQty,
@@ -75,5 +75,21 @@ const CartItem = ({ cartItem }) => {
         </div>
     );
 };
+
+CartItem.propTypes = {
+    cartItem: PropTypes.exact({
+        price: PropTypes.number.isRequired,
+        totalPrice: PropTypes.number.isRequired,
+        quantity: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+        imageURL: PropTypes.string.isRequired,
+        alt: PropTypes.string,
+        description: PropTypes.string,
+        stock: PropTypes.number,
+        category: PropTypes.any,
+        sku: PropTypes.any,
+        id: PropTypes.string
+    })
+}
 
 export default CartItem;
