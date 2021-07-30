@@ -2,13 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../Button";
 import Text from "../Text";
-import Cart from "../Cart"
+import Cart from "../Cart";
 
 import "./style.scss";
 import { useDispatch, useSelector } from "react-redux";
 
 import { toggleCart } from "../../redux/cart/actions";
-
 
 const Header = () => {
     const dispatch = useDispatch();
@@ -30,20 +29,7 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className="nav-container">
-                    {localStorage.getItem("isLoggedIn") ? (
-                        <div className="nav-container__quickLinks">
-                            <Text>Welcome</Text>
-                            <Link
-                                aria-label="Click to logout"
-                                to="/"
-                                role="navigation"
-                                tabIndex="0"
-                                onClick={localStorage.removeItem("isLoggedIn")}
-                            >
-                                <Text>Register</Text>
-                            </Link>
-                        </div>
-                    ) : (<div className="nav-container__quickLinks">
+                    <div className="nav-container__quickLinks">
                         <Link
                             aria-label="Navigate to signin page"
                             to="/signin"
@@ -60,7 +46,7 @@ const Header = () => {
                         >
                             <Text>Register</Text>
                         </Link>
-                    </div>)}
+                    </div>
                     <div className="nav-container__navigation">
                         <div className="nav-container__navigation__links">
                             <Link
@@ -90,7 +76,10 @@ const Header = () => {
                                 tabIndex="0"
                                 data-testid="open-cart-button"
                             >
-                                <img src="/static/images/cart.svg" alt="Cart Icon" />
+                                <img
+                                    src="/static/images/cart.svg"
+                                    alt="Cart Icon"
+                                />
                                 <Text>{cartItemsCount} items</Text>
                             </Button>
                         </div>

@@ -1,14 +1,14 @@
 const path = require("path");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin")
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
+    // entry files
     entry: "./src/index.js",
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "[name].[contenthash].js",
-        publicPath: "/",
     },
     module: {
         rules: [
@@ -24,9 +24,12 @@ module.exports = {
             template: path.resolve(__dirname, "src", "index.html"),
         }),
         new CopyWebpackPlugin({
-            patterns: [
-                { from: "static" }
-            ]
-        })
+            patterns: [{ from: "static" }],
+        }),
     ],
+    // resolve files configuration
+    resolve: {
+        // file extensions
+        extensions: [".js", ".jsx", ".scss", ".css", ".png"],
+    },
 };

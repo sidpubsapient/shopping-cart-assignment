@@ -5,10 +5,10 @@ import Footer from "./components/Footer";
 import { GlobalStyles } from "./styles/global";
 import Home from "./modules/Home";
 import Register from "./modules/Register";
-import Products from "./modules/PLP"
-import SignIn from "./modules/SignIn"
+import Products from "./modules/PLP";
+import SignIn from "./modules/SignIn";
 
-function App() {
+export const App = function () {
     return (
         <>
             <GlobalStyles />
@@ -23,9 +23,7 @@ function App() {
                     <Redirect to="/" />
                 </Switch>
             </main>
-            <Footer/>
+            <Footer />
         </>
     );
-}
-
-export default App;
+};

@@ -1,15 +1,26 @@
 {
-  "name": "shopping-backend",
-  "version": "1.0.0",
-  "description": "",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1"
-  },
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
-  "author": "Siddharth Yadav",
-  "license": "ISC"
+    "name": "shopping-backend",
+    "version": "1.0.0",
+    "description": "",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "ignore-styles": "^5.0.1"
+    },
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ]
+    },
+    "author": "Siddharth Yadav",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/preset-env": "^7.14.8",
+        "@babel/preset-react": "^7.14.5"
+    }
 }
