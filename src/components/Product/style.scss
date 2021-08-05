@@ -1,0 +1,53 @@
+.product {
+    padding: 1.2rem;
+    margin: 3rem 0;
+    box-shadow: 10px 0 10px -8px #f3f3f3;
+
+    .product-title {
+        height: 5rem;
+        overflow: hidden;
+        margin-bottom: 2.4rem;
+        .title {
+            font-size: 1.8rem;
+            line-height: 1.4;
+            font-weight: 700;
+        }
+    }
+    .product-img {
+        max-width: 25rem;
+        margin-bottom: 2.4rem;
+        img {
+            width: 100%;
+        }
+        overflow: hidden;
+    }
+
+    .product-description {
+        height: 8rem;
+        font-size: 1.6rem;
+        line-height: 1.8;
+        color: #495057;
+        background-color: #eee;
+        margin-bottom: 2.4rem;
+        padding: 1.6rem;
+        overflow-y: scroll;
+    }
+
+    .pricing-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 1.2rem;
+        border-bottom: 1px dashed #bfbfbf;
+
+        .product-mrp {
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        button {
+            width: 12rem;
+            color: #fff;
+        }
+    }
+}

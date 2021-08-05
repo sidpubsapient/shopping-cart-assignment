@@ -13,7 +13,7 @@ const Header = () => {
         dispatch(toggleCart());
     };
     return (
-        <header className="header1">
+        <header className="header">
             <div className="container">
                 <Link aria-label="Sabka Bazaar Logo" tabIndex="0" to="/">
                     <img
