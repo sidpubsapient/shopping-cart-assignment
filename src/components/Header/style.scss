@@ -1,8 +1,8 @@
 @import "../../styles/variables.scss";
 
 .header1 {
-    height: 9rem;
-    box-shadow: 0 1rem 1rem rgba($color: #000000, $alpha: 0.04);
+    max-height: 9rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.08);
     margin-bottom: 2.4rem;
     .container {
         display: flex;
@@ -29,7 +29,7 @@
     .nav-links {
         display: flex;
         justify-content: flex-start;
-        gap: 1rem;
+        gap: 3rem;
     }
     .action-links {
         display: flex;
