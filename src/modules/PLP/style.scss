@@ -1,0 +1,11 @@
+.plp-section {
+    display: flex;
+    .plp-sidebar {
+        display: flex;
+        flex-direction: column;
+        background-color: #eee;
+    }
+    .plp-products {
+        flex-grow: 2;
+    }
+}

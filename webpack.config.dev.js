@@ -7,6 +7,7 @@ module.exports = merge(commonConfig, {
     devServer: {
         historyApiFallback: true,
         port: 8088,
+        contentBase: "./",
     },
     module: {
         rules: [

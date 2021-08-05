@@ -1,0 +1,19 @@
+.sidebar {
+    a:link,
+    a:visited {
+        font-size: 1.8rem;
+        display: block;
+        color: #495057;
+        padding: 1.6rem 3.2rem;
+        transition: all 0.3s;
+        border-bottom: 1px solid #dde0e4;
+        cursor: pointer;
+    }
+    .selected-category {
+        background-color: #bfbfbf;
+    }
+    a:hover,
+    a:active {
+        background-color: #bfbfbf;
+    }
+}
