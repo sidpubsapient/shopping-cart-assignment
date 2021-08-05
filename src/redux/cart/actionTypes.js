@@ -1,0 +1,7 @@
+export const TOGGLE_CART_DIALOG = "TOGGLE_CART_DIALOG";
+export const ADD_TO_CART_INIT = "ADD_TO_CART_INIT";
+export const ADD_TO_CART_SUCCESS = "ADD_TO_CART_SUCCESS";
+export const ADD_TO_CART_FAILURE = "ADD_TO_CART_FAILURE";
+export const REMOVE_FROM_CART = "REMOVE_FROM_CART";
+export const INC_QTY = "INC_QTY";
+export const DEC_QTY = "DEC_QTY";
