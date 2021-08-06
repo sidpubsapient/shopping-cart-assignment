@@ -1,0 +1,48 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .input-label {
+        font-size: 1.6rem;
+        font-weight: 400;
+        position: absolute;
+        pointer-events: none;
+        top: 18px;
+        transition: 0.2s ease all;
+        color: #bfbfbf;
+    }
+
+    input {
+        width: 100%;
+        padding: 1.2rem 0 0.8rem 0rem;
+        font-size: 1.6rem;
+        font-family: inherit;
+        border: none;
+        border-bottom: 2px solid #bfbfbf;
+        color: inherit;
+    }
+
+    input:focus {
+        outline: none;
+        border-bottom: 2px solid #50d9e3;
+        ~ .input-label {
+            top: 0px;
+            font-size: 1rem;
+            opacity: 1;
+        }
+    }
+    input:not(:focus) {
+        border-bottom: 2px solid #bfbfbf;
+    }
+    .top-label {
+        top: 0px;
+        font-size: 1rem;
+        opacity: 1;
+    }
+    .err-msg {
+        color: #c92a2a;
+        font-size: 1.2rem;
+        padding: 0.5rem 0 0 0;
+        height: 0.5rem;
+    }
+}
