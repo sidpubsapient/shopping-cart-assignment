@@ -1,0 +1,32 @@
+{
+    "name": "shopping-backend",
+    "version": "1.0.0",
+    "description": "",
+    "dependencies": {
+        "@babel/core": "^7.15.0",
+        "@babel/plugin-proposal-class-properties": "^7.12.1",
+        "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+        "@babel/plugin-transform-arrow-functions": "^7.12.1",
+        "@babel/plugin-transform-async-to-generator": "^7.12.1",
+        "@babel/plugin-transform-runtime": "^7.12.10",
+        "@babel/preset-env": "^7.12.11",
+        "@babel/preset-react": "^7.14.5",
+        "@babel/register": "^7.12.10",
+        "@babel/runtime": "^7.12.5",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "ignore-styles": "^5.0.1"
+    },
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ]
+    },
+    "author": "Siddharth Yadav",
+    "license": "ISC"
+}
