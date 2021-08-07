@@ -2,8 +2,16 @@ import React from "react";
 import "./style.scss";
 import Text from "../Text";
 import Button from "../Button";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart } from "../../redux/cart/actions";
+
 const ProductList = ({ products }) => {
-    console.log("products", products);
+    const cartItems = useSelector((state) => state.cart.cartItems);
+
+    const dispatch = useDispatch();
+    const addItemHandler = (product) => {
+        dispatch(addToCart(product));
+    };
 
     return products.map((product) => (
         <div className="product" aria-label={product.name} key={product.id}>
@@ -21,11 +29,21 @@ const ProductList = ({ products }) => {
             <div className="pricing-info">
                 <Text className="product-mrp">MRP Rs.{product.price}</Text>
 
-                <Button
-                    ariaLabel={`Press enter or click button to buy now ${product.name} worth rupees of ${product.price}}`}
-                >
-                    Buy Now
-                </Button>
+                {cartItems.find((item) => item.id === product.id) ? (
+                    <Button
+                        ariaLabel={`Press enter or click button to add more ${product.name} worth rupees of ${product.price}}`}
+                        onClick={() => addItemHandler(product)}
+                    >
+                        Add More
+                    </Button>
+                ) : (
+                    <Button
+                        ariaLabel={`Press enter or click button to buy now ${product.name} worth rupees of ${product.price}}`}
+                        onClick={() => addItemHandler(product)}
+                    >
+                        Buy Now
+                    </Button>
+                )}
             </div>
         </div>
     ));

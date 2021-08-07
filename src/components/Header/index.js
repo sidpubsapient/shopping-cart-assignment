@@ -4,16 +4,16 @@ import Button from "../Button";
 import Text from "../Text";
 import "./style.scss";
 import { useDispatch, useSelector } from "react-redux";
-
 import { toggleCart } from "../../redux/cart/actions";
 const Header = () => {
     const dispatch = useDispatch();
     const cartItemsCount = useSelector((state) => state.cart.cartItemsCount);
+    const isCartOpen = useSelector((state) => state.cart.isCartOpen);
     const clickHandlerCartButton = () => {
         dispatch(toggleCart());
     };
     return (
-        <header className="header">
+        <header className={`header ${isCartOpen ? "overlay" : ""}`}>
             <div className="container">
                 <Link aria-label="Sabka Bazaar Logo" tabIndex="0" to="/">
                     <img

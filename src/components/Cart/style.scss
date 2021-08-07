@@ -1,0 +1,107 @@
+.cart {
+    height: calc(100vh - 9rem);
+    width: 50rem;
+    position: absolute;
+    bottom: 0;
+    right: 6%;
+    z-index: 100;
+    background-color: #eee;
+    .promotion-caption {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        gap: 2rem;
+        padding: 1rem;
+        .promotion-text {
+            font-size: 1.4rem;
+        }
+    }
+
+    .checkout-container {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1.2rem;
+
+        .promo-info {
+            font-size: 1.4rem;
+            padding-bottom: 1rem;
+        }
+        .proceed-checkout-wrapper {
+            width: 100%;
+
+            .btn-checkout {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 2rem;
+                font-weight: 400;
+                .span {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .cart-heading-wrapper {
+        background-color: #1f1f1f;
+        display: flex;
+        justify-content: space-between;
+        .cart-heading {
+            font-size: 2.4rem;
+            padding: 2.4rem;
+            font-weight: 600;
+            color: #fff;
+            display: inline-block;
+        }
+        .btn-close-cart {
+            color: #fff;
+            background: none;
+            border: none;
+            font-size: 2.4rem;
+            padding: 0 2.4rem;
+            cursor: pointer;
+        }
+
+        .btn-close-cart:hover {
+            filter: brightness(0.8);
+        }
+    }
+
+    .cart-content {
+        height: calc(100vh - 27rem);
+        overflow-y: scroll;
+    }
+    .empty-item-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        .empty-item-heading {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        .empty-item-description {
+            font-size: 1.4rem;
+        }
+    }
+
+    .cart-checkout-wrapper {
+        padding: 2.4rem;
+
+        button {
+            font-size: 2rem;
+            color: #fff;
+            font-weight: 400;
+        }
+    }
+}
+
+.remove-scroll {
+    overflow: hidden;
+}
+
+.add-scroll {
+    overflow: inherit;
+}
