@@ -105,3 +105,28 @@
 .add-scroll {
     overflow: inherit;
 }
+
+@media (max-width: 56em) {
+    .cart {
+        width: 100vw;
+        right: 0;
+    }
+}
+
+@media (max-width: 34em) {
+    .cart {
+        top: 0;
+        height: 100vh;
+        .cart-checkout-wrapper {
+            bottom: 0;
+            position: absolute;
+            width: 90%;
+        }
+
+        .checkout-container {
+            position: absolute;
+            bottom: 0;
+            width: 95%;
+        }
+    }
+}

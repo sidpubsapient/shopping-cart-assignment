@@ -32,16 +32,24 @@ const ProductList = ({ products }) => {
                 {cartItems.find((item) => item.id === product.id) ? (
                     <Button
                         ariaLabel={`Press enter or click button to add more ${product.name} worth rupees of ${product.price}}`}
+                        className="btn-buy"
                         onClick={() => addItemHandler(product)}
                     >
-                        Add More
+                        Add More{" "}
+                        <Text className="tablet-mode-text">
+                            &nbsp; @ Rs.{product.price}
+                        </Text>
                     </Button>
                 ) : (
                     <Button
                         ariaLabel={`Press enter or click button to buy now ${product.name} worth rupees of ${product.price}}`}
+                        className="btn-buy"
                         onClick={() => addItemHandler(product)}
                     >
-                        Buy Now
+                        Buy Now{" "}
+                        <Text className="tablet-mode-text">
+                            &nbsp; @ Rs.{product.price}
+                        </Text>
                     </Button>
                 )}
             </div>

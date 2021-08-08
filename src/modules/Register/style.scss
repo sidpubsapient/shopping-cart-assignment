@@ -28,3 +28,11 @@
         color: #fff;
     }
 }
+
+@media (max-width: 34em) {
+    .section-register {
+        .signup-form {
+            flex-basis: 80%;
+        }
+    }
+}

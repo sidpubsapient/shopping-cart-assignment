@@ -28,3 +28,11 @@
         color: #fff;
     }
 }
+
+@media (max-width: 34em) {
+    .section-signin {
+        .signin-form {
+            flex-basis: 80%;
+        }
+    }
+}

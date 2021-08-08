@@ -32,10 +32,10 @@
                 width: 2rem;
                 color: #fff;
                 cursor: pointer;
+                position: relative;
                 .action-btn-text {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
                     color: #fff;
                 }
             }
@@ -47,6 +47,28 @@
             display: flex;
             align-items: center;
             gap: 1rem;
+        }
+    }
+}
+
+@media (min-width: 34em) and (max-width: 56em) {
+    .cart {
+        .cart-content {
+            .item-container {
+                grid-template-columns: 1fr, 4fr;
+                .item-content {
+                    .item-name {
+                        font-size: 2rem;
+                    }
+                    .item-data {
+                        .item-action-btn {
+                            border-radius: 5px;
+                            height: 3rem;
+                            width: 3rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }

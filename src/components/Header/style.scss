@@ -58,3 +58,25 @@
         color: #495057;
     }
 }
+
+@media (max-width: 34em) {
+    .header {
+        .skb-logo {
+            max-width: 13rem;
+        }
+        .container {
+            align-items: flex-end;
+            .nav-container {
+                .action-links {
+                    display: none;
+                }
+                .action-container {
+                    justify-content: flex-end;
+                    .nav-links {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

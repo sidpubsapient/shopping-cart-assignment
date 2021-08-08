@@ -27,3 +27,34 @@ input:-webkit-autofill:focus {
     padding: 0 9.6rem;
     max-width: 120rem;
 }
+
+// 1200px
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+}
+//1040px
+@media (max-width: 65em) {
+}
+
+//896px
+@media (max-width: 56em) {
+    html {
+        font-size: 50%;
+    }
+    .container {
+        padding: 0 4.8rem;
+    }
+}
+
+//688px
+@media (max-width: 43em) {
+    html {
+        font-size: 43.75%;
+    }
+}
+
+//544px
+@media (max-width: 34em) {
+}

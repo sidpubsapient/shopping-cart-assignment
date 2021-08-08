@@ -1,5 +1,8 @@
 .plp-section {
     display: flex;
+    .plp-dropdown {
+        display: none;
+    }
     .plp-sidebar {
         display: flex;
         flex-direction: column;
@@ -11,5 +14,41 @@
         flex-grow: 2;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 65em) {
+    .plp-section {
+        .plp-products {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media (max-width: 56em) {
+    .plp-section {
+        .plp-products {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .plp-sidebar {
+            min-width: 19rem;
+        }
+    }
+}
+
+@media (max-width: 34em) {
+    .plp-section {
+        flex-direction: column;
+        padding-top: 2rem;
+        .plp-dropdown {
+            display: block;
+        }
+        .plp-products {
+            grid-template-columns: 1fr;
+        }
+        .plp-sidebar {
+            min-width: 15rem;
+            display: none;
+        }
     }
 }
