@@ -136,7 +136,9 @@ const RegisterForm = () => {
     return (
         <section className="section-register">
             <div className="signup-details">
-                <Text className="signup-heading">Sign up</Text>
+                <Text className="signup-heading" role="heading">
+                    Sign up
+                </Text>
                 <Text className="signup-description">
                     We do not share your personal details with anyone.
                 </Text>
@@ -156,6 +158,7 @@ const RegisterForm = () => {
                             role={field.role}
                             tabIndex="0"
                             type={field.type}
+                            data-testid={field.name}
                             // required
                             value={signupData[field.name]}
                         />
@@ -165,6 +168,7 @@ const RegisterForm = () => {
                         role="button"
                         tabIndex="0"
                         type="submit"
+                        data-testid="btn-signup"
                         className="btn-signup"
                     >
                         Signup

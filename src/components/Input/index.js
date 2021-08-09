@@ -17,7 +17,6 @@ const Input = ({
             <input
                 aria-label={ariaLabel}
                 aria-hidden={ariaHidden}
-                className="form-group-input"
                 id={htmlFor}
                 name={name}
                 onChange={changeHandler}
@@ -33,7 +32,7 @@ const Input = ({
                     {label}
                 </label>
             ) : null}
-            <div className="err-msg" role="alert">
+            <div className="err-msg" role="alert" data-testid="error-msg">
                 {error ? error : ""}
             </div>
         </div>
